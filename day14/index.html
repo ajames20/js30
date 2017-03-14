@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Reference VS Copy</title>
+</head>
+
+<body>
+
+    <script>
+        const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+        //makek a copy of an array
+        const team = players.slice();
+        team[3] = 'Andrew';
+
+
+        const person = {
+            name: 'Andrew',
+            age: 35
+        }
+
+        const captain = Object.assign({}, person, {
+            number: 99
+        });
+
+        console.log(person, captain);
+    </script>
+
+</body>
+
+</html>
