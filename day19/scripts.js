@@ -94,5 +94,5 @@ function takePhoto() {
 }
 
 
-// getVideo();
+getVideo();
 video.addEventListener('canplay', paintToCanvas);
